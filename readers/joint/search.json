@@ -1,0 +1,163 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Political Methodology from the Ground Up",
+    "section": "",
+    "text": "Preface\nThis is the joint reader: a single arc through graduate political methodology that runs from core statistical concepts, through the models political scientists actually fit, to the visual grammar used to report them.\nIt is deliberately thin. The two of us maintain independent readers — Weber and Westerland — and those are where topics are developed at length. This book is the spine that holds them together: each chapter states what a topic is for, fixes shared notation, and points to the chapter in one or both author readers that does the work.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#why-the-material-is-organized-this-way",
+    "href": "index.html#why-the-material-is-organized-this-way",
+    "title": "Political Methodology from the Ground Up",
+    "section": "Why the material is organized this way",
+    "text": "Why the material is organized this way\nMethods instruction usually arrives as a sequence of techniques, each with its own assumptions and its own failure modes, and students reasonably conclude that statistics is a large pile of unrelated recipes. The organizing claim of this project is the opposite: a small number of ideas — a quantity you want to know, a model that connects it to data, and an honest account of how uncertain the answer is — generate nearly everything that follows.\nSo the three parts are not three topics. They are three questions asked about the same object:\n\nCore statistical concepts — what is the quantity, and what would count as knowing it?\nModels — what structure connects that quantity to the data you have?\nVisualization — having estimated it, how do you show it without lying?",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#how-to-read-alongside-the-author-readers",
+    "href": "index.html#how-to-read-alongside-the-author-readers",
+    "title": "Political Methodology from the Ground Up",
+    "section": "How to read alongside the author readers",
+    "text": "How to read alongside the author readers\nEach chapter here ends with a Develop this section listing the corresponding chapters in the author readers. A seminar can be run from this book as a syllabus, assigning the author chapters as the substantive reading. A reader working alone can ignore this book entirely and read one author reader front to back.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "index.html#conventions",
+    "href": "index.html#conventions",
+    "title": "Political Methodology from the Ground Up",
+    "section": "Conventions",
+    "text": "Conventions\nNotation is fixed in 1  What Are We Trying to Estimate? and used consistently across all three books. Where the author readers differ in emphasis — and they do, particularly on Bayesian versus frequentist framing — this book says so explicitly rather than papering over it.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "chapters/01-what-is-an-estimand.html",
+    "href": "chapters/01-what-is-an-estimand.html",
+    "title": "1  What Are We Trying to Estimate?",
+    "section": "",
+    "text": "1.1 The three-part distinction\nBefore any model is fit there are three separate objects, and most confusion in applied work comes from collapsing them:\nA regression coefficient is an estimate. Whether it answers your question is a claim about the estimand, and no amount of standard-error arithmetic settles it.",
+    "crumbs": [
+      "Part I: Core Statistical Concepts",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What Are We Trying to Estimate?</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01-what-is-an-estimand.html#the-three-part-distinction",
+    "href": "chapters/01-what-is-an-estimand.html#the-three-part-distinction",
+    "title": "1  What Are We Trying to Estimate?",
+    "section": "",
+    "text": "Object\nSymbol\nWhat it is\n\n\n\n\nEstimand\n\\(\\theta\\)\nThe quantity you want to know. Defined without reference to data or method.\n\n\nEstimator\n\\(\\hat\\theta(\\cdot)\\)\nA rule for turning data into a guess.\n\n\nEstimate\n\\(\\hat\\theta\\)\nThe number that rule returns on the data you happen to have.",
+    "crumbs": [
+      "Part I: Core Statistical Concepts",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What Are We Trying to Estimate?</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01-what-is-an-estimand.html#shared-notation",
+    "href": "chapters/01-what-is-an-estimand.html#shared-notation",
+    "title": "1  What Are We Trying to Estimate?",
+    "section": "1.2 Shared notation",
+    "text": "1.2 Shared notation\nUsed across all three books in this project:\n\n\\(Y\\) — outcome; \\(Y_i\\) for unit \\(i\\)\n\\(X\\) — covariate matrix, \\(n \\times k\\), including the intercept column\n\\(\\beta\\) — population coefficient vector; \\(\\hat\\beta\\) its estimate\n\\(\\varepsilon\\) — disturbance, with \\(\\mathbb{E}[\\varepsilon \\mid X] = 0\\) under exogeneity\n\\(\\theta\\) — a generic estimand when the target is not a coefficient\n\\(p(\\theta \\mid y)\\) — posterior; \\(\\mathcal{L}(\\theta \\mid y)\\) — likelihood",
+    "crumbs": [
+      "Part I: Core Statistical Concepts",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What Are We Trying to Estimate?</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01-what-is-an-estimand.html#develop-this",
+    "href": "chapters/01-what-is-an-estimand.html#develop-this",
+    "title": "1  What Are We Trying to Estimate?",
+    "section": "1.3 Develop this",
+    "text": "1.3 Develop this\n\nWeber, Linear Regression Analysis — Ch. 1 (Understanding Linear Regression), Ch. 5 (Model Fit, Uncertainty, and Inference)\nWeber, Advanced Regression and Causal Inference — Ch. 1 (A Brief Review, and the Logic of Statistical Inference)\nWesterland — to be written",
+    "crumbs": [
+      "Part I: Core Statistical Concepts",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What Are We Trying to Estimate?</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-the-linear-model.html",
+    "href": "chapters/02-the-linear-model.html",
+    "title": "2  The Linear Model as a Base Case",
+    "section": "",
+    "text": "2.1 What the assumptions are load-bearing for\nThe linear model is not important because political data are linear. It is important because it is the simplest place to see every problem that recurs in harder models: what the assumptions buy you, what breaks when they fail, and what a correction actually corrects.\nEach Gauss–Markov assumption underwrites a specific claim. Losing one costs you that claim and nothing else — a distinction worth being precise about, since “the assumptions are violated” is usually said as though it invalidated everything at once.",
+    "crumbs": [
+      "Part II: Models",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Linear Model as a Base Case</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-the-linear-model.html#what-the-assumptions-are-load-bearing-for",
+    "href": "chapters/02-the-linear-model.html#what-the-assumptions-are-load-bearing-for",
+    "title": "2  The Linear Model as a Base Case",
+    "section": "",
+    "text": "Assumption\nWhat it buys\n\n\n\n\nLinearity in parameters\nThat \\(\\beta\\) is the object being estimated at all\n\n\nExogeneity, \\(\\mathbb{E}[\\varepsilon \\mid X] = 0\\)\nUnbiasedness\n\n\nSpherical errors\nEfficiency, and the usual standard errors\n\n\nFull rank \\(X\\)\nA unique solution\n\n\nNormality of \\(\\varepsilon\\)\nExact finite-sample inference (not consistency)",
+    "crumbs": [
+      "Part II: Models",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Linear Model as a Base Case</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-the-linear-model.html#where-each-failure-leads",
+    "href": "chapters/02-the-linear-model.html#where-each-failure-leads",
+    "title": "2  The Linear Model as a Base Case",
+    "section": "2.2 Where each failure leads",
+    "text": "2.2 Where each failure leads\nEvery “advanced” model in this project can be read as a response to one of these failures — limited outcomes break linearity, clustered data break sphericity, omitted confounders break exogeneity.",
+    "crumbs": [
+      "Part II: Models",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Linear Model as a Base Case</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02-the-linear-model.html#develop-this",
+    "href": "chapters/02-the-linear-model.html#develop-this",
+    "title": "2  The Linear Model as a Base Case",
+    "section": "2.3 Develop this",
+    "text": "2.3 Develop this\n\nWeber, Linear Regression Analysis — Ch. 2 (Gauss–Markov), Ch. 7 (Heteroskedasticity), Ch. 9 (Autocorrelation), Ch. 12 (Exogeneity)\nWeber, Advanced Regression and Causal Inference — Ch. 3 (Binary Dependent Variables), Ch. 8 (Count Data)\nWesterland — to be written",
+    "crumbs": [
+      "Part II: Models",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>The Linear Model as a Base Case</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/03-showing-uncertainty.html",
+    "href": "chapters/03-showing-uncertainty.html",
+    "title": "3  Showing Uncertainty",
+    "section": "",
+    "text": "3.1 The working rule\nVisualization is treated here as part of inference, not as presentation applied afterward. A coefficient table reports what the software returned; a plot of predicted quantities reports what the model claims about the world. Those are different acts, and only the second is answerable to the estimand fixed in Chapter 1.\nShow the quantity of interest on the scale a reader can reason about, with its uncertainty, and show the data behind it whenever the number of observations permits.\nThis rules out a good deal of standard practice: logit coefficients presented without predicted probabilities, interaction terms reported as a single product term, bar charts of means with no dispersion.",
+    "crumbs": [
+      "Part III: Visualization",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Showing Uncertainty</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/03-showing-uncertainty.html#simulation-as-the-general-tool",
+    "href": "chapters/03-showing-uncertainty.html#simulation-as-the-general-tool",
+    "title": "3  Showing Uncertainty",
+    "section": "3.2 Simulation as the general tool",
+    "text": "3.2 Simulation as the general tool\nFor anything nonlinear, the honest path from estimates to a plotted quantity runs through simulation — draw from the sampling distribution or the posterior, push each draw through the model, and summarize the resulting distribution of the quantity you actually care about.",
+    "crumbs": [
+      "Part III: Visualization",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Showing Uncertainty</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/03-showing-uncertainty.html#develop-this",
+    "href": "chapters/03-showing-uncertainty.html#develop-this",
+    "title": "3  Showing Uncertainty",
+    "section": "3.3 Develop this",
+    "text": "3.3 Develop this\n\nWeber, Advanced Regression and Causal Inference — Ch. 4 (Simulation and Statistical Models), Ch. 7 (Model Fit and Interpretation)\nWeber, Linear Regression Analysis — Ch. 6 (Interactions and Non-Additivity)\nWesterland — to be written",
+    "crumbs": [
+      "Part III: Visualization",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Showing Uncertainty</span>"
+    ]
+  }
+]
